@@ -1,0 +1,92 @@
+.container {
+  width: 941px;
+  height: 134px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.containerInfo {
+  padding: 15px 15px 24px 19px;
+  display: flex;
+
+  div:first-child {
+    flex-grow: 1;
+  }
+}
+
+.title {
+  color: #1890ff;
+  font-size: 20px;
+}
+
+.text {
+  display: block;
+  max-width: 682px;
+  font-size: 12px;
+  line-height: 22px;
+  overflow: hidden;
+  height: 50px;
+}
+.info {
+  display: flex;
+  gap: 12px;
+}
+
+.infoUser {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 18px;
+}
+.date {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.imgBox {
+  width: 46px;
+  height: 46px;
+}
+
+.tagList {
+  display: flex;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  gap: 8px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 5px;
+  font-style: normal;
+  font-weight: 400;
+  overflow: hidden;
+  width: 100px;
+}
+
+.titleBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  height: 32px;
+  overflow: hidden;
+  a {
+    width: 150px;
+    height: 32px;
+  }
+}
+
+.buttonBox {
+  display: flex;
+  gap: 5px;
+}

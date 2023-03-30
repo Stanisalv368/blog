@@ -1,0 +1,39 @@
+.buttonDelete {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #f5222d;
+  border-radius: 4px;
+  background-color: none;
+  color: #f5222d;
+}
+
+.addTag {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #1890ff;
+  border-radius: 4px;
+  background-color: none;
+  color: #1890ff;
+  position: absolute;
+  bottom: 20px;
+  left: 336px;
+}
+
+.tagBox {
+  align-self: flex-start;
+  display: flex;
+  gap: 5px;
+
+  input {
+    width: 300px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+}

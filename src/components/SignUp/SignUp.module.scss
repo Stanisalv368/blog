@@ -1,0 +1,134 @@
+.container {
+  width: 384px;
+  height: 640px;
+  background-color: #fff;
+  margin: 59px auto;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07), 0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198),
+    0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275), 0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035),
+    0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725), 0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.formbox {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+  height: 86px;
+  input {
+    width: 320px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #262626;
+}
+.submit {
+  width: 320px;
+  background: #1890ff;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 8px;
+  border-color: #1890ff;
+  margin-top: 9px;
+}
+
+.newAcc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #8c8c8c;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  width: 320px;
+  align-items: flex-start;
+  margin-bottom: 9px;
+  margin-top: 17px;
+
+  input {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 320px;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+
+.checkBoxLable {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  min-width: 289px;
+}
+
+.link {
+  color: #1890ff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+.errorMessage {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #f5222d;
+}
+.load {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}

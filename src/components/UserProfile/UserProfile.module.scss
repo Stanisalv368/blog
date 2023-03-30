@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.createArticle {
+  color: #52c41a;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid #52c41a;
+  border-radius: 5px;
+  width: 112px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logOut {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 6px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.imgBox {
+  max-width: 46px;
+  max-height: 46px;
+}
+
+.userBox {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.logo {
+  align-self: center;
+  background-color: #d3d3d3;
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 50%;
+}
