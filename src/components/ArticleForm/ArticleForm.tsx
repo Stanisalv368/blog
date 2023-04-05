@@ -6,7 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { createArticle, updateArticle } from "../../store/ArticleSlice";
 import { CreateArticleType } from "../../Types";
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 import { createArticleSchema } from "../../yup/yup";
 import TagList from "../TagList/TagList";
 
@@ -37,9 +37,9 @@ const ArticleForm = () => {
   const unSubmit: SubmitHandler<CreateArticleType> = (article) => {
     const data = { ...article, tagLists };
     if (visibl) {
-      dispatch(updateArticle({ data, token: user.token, slug })).then(() => navigate(path.home));
+      dispatch(updateArticle({ data, token: user.token, slug })).then(() => navigate(routes.home));
     } else {
-      dispatch(createArticle({ data, token: user.token })).then(() => navigate(path.home));
+      dispatch(createArticle({ data, token: user.token })).then(() => navigate(routes.home));
     }
   };
 

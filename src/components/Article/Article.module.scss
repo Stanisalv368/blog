@@ -4,6 +4,8 @@
   background-color: #fff;
   margin: 24px auto;
   position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #d3d3d3;
 }
 
 .title {
@@ -24,6 +26,9 @@
 .imgBox {
   width: 46px;
   height: 46px;
+  img {
+    border-radius: 50%;
+  }
 }
 .infoUser {
   display: flex;

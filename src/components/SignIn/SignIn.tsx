@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { LoadingOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
 
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 import { signInSchema } from "../../yup/yup";
 import { LoginUserType } from "../../Types";
 import { useAppDispatch, useAppSelector } from "../../hooks";
@@ -33,7 +33,7 @@ const SignIn = () => {
         setInvalidData(true);
       } else {
         setInvalidData(false);
-        navigate(path.home);
+        navigate(routes.home);
       }
     });
   };
@@ -61,7 +61,7 @@ const SignIn = () => {
         <input type="submit" className={style.submit} value={"Login"}></input>
         <span className={style.newAcc}>
           Don’t have an account?{" "}
-          <Link className={style.link} to={path.signUp}>
+          <Link className={style.link} to={routes.signUp}>
             Sign Up.
           </Link>
         </span>

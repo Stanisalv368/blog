@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { EditProfileType } from "../../Types";
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 import { editProfileSchema } from "../../yup/yup";
 import { updateUser } from "../../store/UserSlice";
 
@@ -24,7 +24,7 @@ const EditProfileForm = () => {
   } = useForm<EditProfileType>({ mode: "onBlur", resolver: yupResolver(editProfileSchema) });
 
   const unSubmit: SubmitHandler<EditProfileType> = (data) => {
-    dispath(updateUser({ data, token: user.token })).then(() => navigate(path.home));
+    dispath(updateUser({ data, token: user.token })).then(() => navigate(routes.home));
   };
 
   useEffect(() => {

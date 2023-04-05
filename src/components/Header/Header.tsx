@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { LoadingOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
 
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 import { useAppSelector } from "../../hooks";
 import UserProfile from "../UserProfile/UserProfile";
 
@@ -17,14 +17,16 @@ const Header = () => {
 
   return (
     <div className={style.header}>
-      <Link to={path.home}>Realworld Blog</Link>
+      <Link to={routes.home}>Realworld Blog</Link>
       <div className={style.load}>
         <Spin indicator={antIcon} spinning={isLoad} />
       </div>
       {!isLogin ? (
         <React.Fragment>
-          <Link to={path.signIn}>Sign In</Link>
-          <Link to={path.signUp}>Sign Up</Link>
+          <Link to={routes.signIn}>Sign In</Link>
+          <Link className={style.buttonUp} to={routes.signUp}>
+            Sign Up
+          </Link>
         </React.Fragment>
       ) : (
         <UserProfile />

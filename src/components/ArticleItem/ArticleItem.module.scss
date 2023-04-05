@@ -4,6 +4,7 @@
   background-color: white;
   margin: 0 auto;
   border-radius: 5px;
+  box-shadow: 0 0 10px #d3d3d3;
 }
 .containerInfo {
   padding: 15px 15px 24px 19px;
@@ -49,6 +50,9 @@
 .imgBox {
   width: 46px;
   height: 46px;
+  img {
+    border-radius: 50%;
+  }
 }
 
 .tagList {
@@ -77,12 +81,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 150px;
-  height: 32px;
+  max-width: 230px;
+  max-height: 32px;
   overflow: hidden;
   a {
-    width: 150px;
-    height: 32px;
+    max-width: 200px;
+    overflow: hidden;
   }
 }
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { v4 } from "uuid";
 
 import { ArticleType } from "../../Types";
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 import RateButton from "../RateButton/RateButton";
 
 import style from "./ArticleItem.module.scss";
@@ -18,7 +18,7 @@ const ArticleItem = (props: ArticleType) => {
       <div className={style.containerInfo}>
         <div>
           <div className={style.titleBox}>
-            <Link className={style.title} to={`${path.article}${slug}`}>
+            <Link className={style.title} to={`${routes.article}${slug}`}>
               {title}
             </Link>
             <div className={style.buttonBox}>

@@ -8,7 +8,7 @@ import { Popconfirm } from "antd";
 import Rate from "../RateButton/RateButton";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { getArticle, deleteArticle } from "../../store/ArticleSlice";
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 
 import style from "./Article.module.scss";
 
@@ -25,7 +25,7 @@ const Article = () => {
   const dispatch = useAppDispatch();
 
   const confirm = () => {
-    dispatch(deleteArticle({ slug, token })).then(() => navigate(path.home));
+    dispatch(deleteArticle({ slug, token })).then(() => navigate(routes.home));
   };
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Article = () => {
       <div className={style.box}>
         <div className={style.infoArticle}>
           <div className={style.titleBox}>
-            <h1 className={style.title}>{title}</h1>
+            <span className={style.title}>{title}</span>
             <div className={style.buttonBox}>
               <Rate favoritesCount={favoritesCount} favorited={favorited} slug={slug} />
             </div>
@@ -79,7 +79,7 @@ const Article = () => {
               Delete
             </button>
           </Popconfirm>
-          <Link className={style.buttonEdit} type="button" to={`${path.createArticle}edit`}>
+          <Link className={style.buttonEdit} type="button" to={`${routes.createArticle}edit`}>
             Edit
           </Link>
         </div>

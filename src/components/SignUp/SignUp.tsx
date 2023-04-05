@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { LoadingOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
 
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 import { CreateUserType } from "../../Types";
 import { signUpSchema } from "../../yup/yup";
 import { createUser } from "../../store/UserSlice";
@@ -29,7 +29,7 @@ const SignUp = () => {
       if (res.type === "user/createUser/rejected") {
         console.log("q");
       } else {
-        navigate(path.signIn);
+        navigate(routes.signIn);
       }
     });
   };
@@ -75,7 +75,7 @@ const SignUp = () => {
         <input type="submit" className={style.submit} value={"Create"}></input>
         <span className={style.newAcc}>
           Already have an account?{" "}
-          <Link className={style.link} to={path.signIn}>
+          <Link className={style.link} to={routes.signIn}>
             Sign In.
           </Link>
         </span>

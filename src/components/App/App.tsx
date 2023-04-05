@@ -10,7 +10,7 @@ import ArticleForm from "../ArticleForm/ArticleForm";
 import EditProfileForm from "../EditProfileForm/EditProfileForm";
 import { getArticles } from "../../store/ArticleSlice";
 import { useAppDispatch, useAppSelector } from "../../hooks";
-import { path } from "../../path/path";
+import { routes } from "../../routes/routes";
 import { loginUSer } from "../../store/UserSlice";
 
 import style from "./App.module.scss";
@@ -39,13 +39,13 @@ const App = () => {
     <div className={style.container}>
       <Header />
       <Routes>
-        <Route path={path.home} element={<ArticleList />} />
-        <Route path={`${path.article}:slug`} element={<Article />} />
-        <Route path={path.signIn} element={<SignIn />} />
-        <Route path={path.signUp} element={<SignUp />} />
-        <Route path={path.createArticle} element={<ArticleForm />} />
-        <Route path={path.editProfile} element={<EditProfileForm />} />
-        <Route path={`${path.createArticle}:edit`} element={<ArticleForm />} />
+        <Route path={routes.home} element={<ArticleList />} />
+        <Route path={`${routes.article}:slug`} element={<Article />} />
+        <Route path={routes.signIn} element={<SignIn />} />
+        <Route path={routes.signUp} element={<SignUp />} />
+        <Route path={routes.createArticle} element={<ArticleForm />} />
+        <Route path={routes.editProfile} element={<EditProfileForm />} />
+        <Route path={`${routes.createArticle}:edit`} element={<ArticleForm />} />
       </Routes>
     </div>
   );
